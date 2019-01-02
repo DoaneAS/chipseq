@@ -10,7 +10,6 @@ Bootstrap:docker
     PATH=/opt/conda/envs/nfcore-chipseq-1.4dev/bin:$PATH
     export PATH
     
-
 %files
     environment.yml /
 
