@@ -14,7 +14,6 @@ Bootstrap:docker
     environment.yml /
 
 %post
-    mkdir -p /code
-    git clone git@github.com:DoaneAS/chipseq.git code/
-    /opt/conda/bin/conda env create -f /code/chipseq/environment.yml
+    git clone https://github.com/nf-core/chipseq.git
+    /opt/conda/bin/conda env create -f chipseq/environment.yml
     /opt/conda/bin/conda clean -a
